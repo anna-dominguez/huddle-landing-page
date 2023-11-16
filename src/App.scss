@@ -1,0 +1,117 @@
+header {
+  img {
+    width: 120px;
+  }
+}
+
+main {
+  margin-top: 70px;
+  img {
+    width: 100%;
+  }
+  section {
+    text-align: center;
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 36px;
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    button {
+      margin-top: 24px;
+      border: none;
+      background-color: white;
+      color: hsl(257, 40%, 49%);
+      box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.26);
+      padding: 15px 64px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 12px;
+      line-height: 18px;
+      &:hover {
+        background-color: hsl(300, 69%, 71%);
+        color: white;
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 64px;
+  .icon {
+    border: 1px solid white;
+    border-radius: 100%;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid hsl(300, 69%, 71%);
+      i {
+        color: hsl(300, 69%, 71%);
+      }
+    }
+  }
+  :nth-child(1) i {
+    padding: 7px 9px;
+    height: 13px;
+  }
+  :nth-child(2) i {
+    padding: 8px 7px;
+    height: 13px;
+  }
+  :nth-child(3) i {
+    padding: 8px 7px;
+    height: 13px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    img {
+      width: 200px;
+    }
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    section {
+      text-align: start;
+      h1 {
+        font-size: 40px;
+        line-height: 60px;
+        margin-bottom: 24px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 27px;
+      }
+      button {
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+  }
+  footer {
+    justify-content: end;
+    :nth-child(1) i {
+      height: 19px;
+      padding: 10px 10px;
+    }
+    :nth-child(2) i {
+      padding: 7px 7px;
+      height: 26px;
+    }
+    :nth-child(3) i {
+      padding: 8px 7px;
+      height: 18px;
+    }
+  }
+}

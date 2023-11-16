@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss'
+import Logo from './images/logo.svg'
+import Illustration from './images/illustration-mockups.svg'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <img src={Logo} alt="Logo" />
       </header>
-    </div>
-  );
+      <main>
+        <img src={Illustration} alt="Illustration" />
+        <section>
+          <h1>Build The Community Your Fans Will Love</h1>
+          <p>
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <button>Register</button>
+        </section>
+      </main>
+      <footer>
+        <div className="icon">
+          <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <div className="icon">
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div className="icon">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </footer>
+    </>
+  )
 }
 
-export default App;
+export default App
